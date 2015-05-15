@@ -1,5 +1,7 @@
 # noptd
 
+[![Build Status](https://travis-ci.org/evanlucas/noptd.svg)](https://travis-ci.org/evanlucas/noptd)
+
 nopt with default values
 
 ## Install
