@@ -1,6 +1,6 @@
 {
   "name": "noptd",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "nopt with default values",
   "main": "index.js",
   "scripts": {
