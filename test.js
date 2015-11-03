@@ -1,10 +1,12 @@
-var nopt = require('./')
-  , test = require('tape')
+'use strict'
+
+const nopt = require('./')
+    , test = require('tap').test
 
 test('should work without defaults', function(t) {
   t.plan(1)
-  var input = ['--help']
-  var parsed = nopt({
+  const input = ['--help']
+  const parsed = nopt({
     help: Boolean
   , name: String
   }, null, input, 0)()
@@ -13,8 +15,8 @@ test('should work without defaults', function(t) {
 
 test('should work with defaults', function(t) {
   t.plan(4)
-  var input = ['--help']
-  var parsed = nopt({
+  const input = ['--help']
+  const parsed = nopt({
     help: Boolean
   , name: String
   }, null, input, 0)({
@@ -23,13 +25,13 @@ test('should work with defaults', function(t) {
   t.equal(parsed.help, true)
   t.equal(parsed.name, 'evan')
 
-  var input = ['--help', '--name', 'name']
-  var parsed = nopt({
+  const input2 = ['--help', '--name', 'name']
+  const parsed2 = nopt({
     help: Boolean
   , name: String
-  }, null, input, 0)({
+  }, null, input2, 0)({
     name: 'evan'
   })
-  t.equal(parsed.help, true)
-  t.equal(parsed.name, 'name')
+  t.equal(parsed2.help, true)
+  t.equal(parsed2.name, 'name')
 })
