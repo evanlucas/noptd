@@ -1,6 +1,7 @@
 # noptd
 
 [![Build Status](https://travis-ci.org/evanlucas/noptd.svg)](https://travis-ci.org/evanlucas/noptd)
+[![Coverage Status](https://coveralls.io/repos/evanlucas/noptd/badge.svg?branch=master&service=github)](https://coveralls.io/github/evanlucas/noptd?branch=master)
 
 nopt with default values
 
