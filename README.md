@@ -4,10 +4,13 @@
 
 nopt with default values
 
+*Note: noptd is only supported on iojs and node v4+. To use with an older
+version of node, please use `noptd@1`.*
+
 ## Install
 
 ```bash
-$ npm install noptd
+$ npm install --save noptd
 ```
 
 ## Example
